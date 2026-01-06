@@ -1,0 +1,73 @@
+h1{
+    color:blueviolet;
+}
+h2{
+    color:rgb(225, 13, 41);
+    text-decoration: overline;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#banner{
+    background-color: darkkhaki;
+    color:blue;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+#banner p{
+    margin: 0;
+}
+
+#nav, nav{
+    background-color: cadetblue;
+    color: aliceblue;
+    padding: 10px;
+    text-align: center;
+}
+
+#nav a, nav a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+    margin-right: 20px;
+
+}
+
+#nav a:hover, nav a:hover{
+    background-color:rgb(49, 142, 72);
+    color:rgb(242, 158, 125); 
+}
+
+#footer, footer, #footer2{
+    background-color: #5eb89a;
+    text-align: center;
+    min-height: 150px;
+}
+
+#footer a, footer a{
+    color:blue;
+    margin-right: 10px;
+    text-decoration: overline;
+
+}
+
+#main, main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+article{
+     margin-bottom: 50px;
+}
+
+.logo{
+    height: 75px;
+    width: 75px;
+}

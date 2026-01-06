@@ -4,71 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/sites.css" />
 </head>
 <body>
-        <a href="index.html">Home</a>
-        <a href="about_us.html">About Us</a>
-        <a href="contact_us.html">Contact Us</a>
-    <h1 style="color:crimson;">Contact Us</h1>
-    <hr/>
+    <header>
+        <div id="header">
+            <div id="banner">
+                <p>Random websit notification</p>
+            </div>
+            <nav>
+                <!-- Anchor tags used for internal navigation -->
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+            </nav>
+        </div>
+    </header>
 
-    <h2 style="color:crimson;">Locations</h2>
-    <table>
-        <tr>
-            <th>Logo</th>
-            <th>Location</th>
-            <th>Address</th>
-            <th>Email Address</th>
-            <th>Phone Number</th>
-        </tr>
-        <tr>
-            <td ><img src="images/duck_logo.png" alt="Duck Reserver Logo" width="50" height="50"></td>      
-            <td>Central Pond</td>
-            <td>123 Main Street, Cityville</td>
-            <td>central@duckreserver.com</td>
-            <td>(555) 123-4567</td> 
-        </tr>
-        <tr>
-            <td><img src="images/chicken_logo.png" alt="Serving Chicken Logo" width="50" height="50"></td>
-            <td>North Lake</td>
-            <td>456 Oak Avenue, Townsburg</td>
-            <td>north@duckreserver.com</td>
-            <td>(555) 987-6543</td>
-        </tr>
-        <tr>
-            <td><img src="images/sunflower.png" alt="Pretty Sunflower Logo" width="50" height="50"></td>
-            <td>South Wetlands</td>
-            <td>789 Pine Road, Villageton</td>
-            <td>south@duckreserver.com</td>
-            <td>(555) 555-5555</td>
-        </tr>
-    </table>
-    </br>
-    <hr/>
-        <h2 style="color:crimson;">Don't be a Chicken - Reach Out To Us - BR549!</h2>
-        
-    <img src="images/chicken.jpg" alt="Those Chickens" width="300" height="400">
-    <p>We are dedicated to serving you.</p>
 
-    <h2 style="color:crimson;">General Inquiries</h2>  
-    <form action="confirmation.html">
-         <label for "fullname">Name: * </label>
-         <br/>
-         <input type="text" id="fullname"  name="fullname" required />
-        <br/> <br/>  
-         <label for "email">Email Address: * </label>
-         <br/>
-         <input type="email" id="email" name="email" required />
-        <br/><br/>
-         <label>Are you employed?</label>
-         <br/>
-         <input type="radio" value "Y" name="employed"/> Yes
-         <input type="radio" value "N" name="employed"/> No
+    <main>
+        <h1>Contact Us</h1>
+        <hr/>
+        <article>
+            <h2>Locations</h2>
+            <table>
+                <tr>
+                    <th>Logo</th>
+                    <th>Location</th>
+                    <th>Address</th>
+                    <th>Email Address</th>
+                    <th>Phone Number</th>
+                </tr>
+                <tr>
+                    <td ><img  class="logo" src="images/malard.png" alt="Duck Reserver Logo"></td>      
+                    <td>Central Pond</td>
+                    <td>123 Main Street, Cityville</td>
+                    <td>central@duckreserver.com</td>
+                    <td>(555) 123-4567</td> 
+                </tr>
+                <tr>
+                    <td><img class="logo" src="images/chicken.png" alt="Serving Chicken Logo" width="50" height="50"></td>
+                    <td>North Lake</td>
+                    <td>456 Oak Avenue, Townsburg</td>
+                    <td>north@chickenserver.com</td>
+                    <td>(555) 987-6543</td>
+                </tr>
+                <tr>
+                    <td><img class="logo" src="images/chicken_lady.png" alt="Pretty Sunflower Logo" width="50" height="50"></td>
+                    <td>South Wetlands</td>
+                    <td>789 Pine Road, Villageton</td>
+                    <td>south@duck-chickenreserver.com</td>
+                    <td>(555) 555-5555</td>
+                </tr>
+            </table>
+            </br>
+            <hr/>
+                <h2>Don't be a Chicken - Reach Out To Us</h2>
+                
+            <img src="images/chicken.jpg" alt="Those Chickens" width="300" height="400">
+            <p>We are dedicated to serving you.</p>
+        </article>
 
-         <br/><br/>
-         <label for "inquiry">State your inquiry *</label>
-        <br/>
-         <textarea cols="50" rows="10" maxlength="150" id"inquiry" name="inquiry"></textarea>
-         <br/><br/>
-         <input type="submit" />
-    </form>
+        <article>
+            <h2>General Inquiries</h2>  
+            <form action="confirmation.html">
+                <label for "fullname">Name: * </label>
+                <br/>
+                <input type="text" id="fullname"  name="fullname" required />
+                <br/> <br/>  
+                <label for "email">Email Address: * </label>
+                <br/>
+                <input type="email" id="email" name="email" required />
+                <br/><br/>
+                <label>Are you employed?</label>
+                <br/>
+                <input type="radio" value "Y" name="employed"/> Yes
+                <input type="radio" value "N" name="employed"/> No
+
+                <br/><br/>
+                <label for "inquiry">State your inquiry *</label>
+                <br/>
+                <textarea cols="50" rows="10" maxlength="150" id"inquiry" name="inquiry"></textarea>
+                <br/><br/>
+                <input type="submit" />
+            </form>
+        </article>
+    </main>
+
+    <div id=footer2 style="min-height: 30px" >
+        <!-- Sample of URLs being display for hyperlinks -->
+        <a href="https://www.amazon.com">Amazon</a>
+        <a href="https://www.ebay.com" target="_blank">EBay</a>
+        <a href=""https://www.trevoirwilliams.com" target="_blank">Trevior Willaims Website</a>
+    </div>
+</body>
