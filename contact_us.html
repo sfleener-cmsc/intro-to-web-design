@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="stylesheets/sites.css" />
+    
 </head>
 <body>
     <header>
@@ -67,7 +68,7 @@
 
         <article>
             <h2>General Inquiries</h2>  
-            <form action="confirmation.html">
+            <form action="confirmation.html" id="contactForm">
                 <label for "fullname">Name: * </label>
                 <br/>
                 <input type="text" id="fullname"  name="fullname" required />
@@ -87,14 +88,20 @@
                 <textarea cols="50" rows="10" maxlength="150" id"inquiry" name="inquiry"></textarea>
                 <br/><br/>
                 <input type="submit" />
+                <button type="button" onclick="ClearForm()" >Clear</button>
+                
             </form>
         </article>
+               
+            
     </main>
 
-    <div id=footer2 style="min-height: 30px" >
+      <div id=footer2 style="min-height: 30px" >
         <!-- Sample of URLs being display for hyperlinks -->
         <a href="https://www.amazon.com">Amazon</a>
         <a href="https://www.ebay.com" target="_blank">EBay</a>
-        <a href=""https://www.trevoirwilliams.com" target="_blank">Trevior Willaims Website</a>
+        <a href=""https://theslf.xyz" target="_blank">Sherri Website</a>
     </div>
+
+    <script src="scripts/site.js"></script>
 </body>
