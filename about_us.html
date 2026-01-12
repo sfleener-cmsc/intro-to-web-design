@@ -4,21 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
     <link rel="stylesheet" href="stylesheets/sites.css" />
 </head>
 <body>
     <header>
-        <div id="banner">
-            <p>Notification</p>
+ 
+        <div id="banner" class="bg-secondary text-white text-center" >
+                <p>A Notification For You</p>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
+        <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Duck Preservation</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1>About Us</h1>
         <hr/>
         <article>
@@ -30,24 +42,95 @@
 
         <article>
             <h2>Daily Tasks</h2>
-            <ul>
-                <li>Feed the ducks</li>
-                <li>Clean the pond</li>
-                <li>Watch the ducks swim</li>
-
-            </ul>
-
+            <div class="row">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/duck-feeding.jpg" class="card-img-top" alt="Feeding">
+                        <div class="card-body">
+                            <h5 class="card-title">Feed the ducks</h5>
+                            <p class="card-text">Some quick feeding text to build on the card title and make up the bulk of the card’s
+                                content.</p>
+                            <a href="contact_us.html" class="btn btn-primary">Questions on Feeding</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/duckPondClean.webp" class="card-img-top" alt="Pond">
+                        <div class="card-body">
+                            <br>
+                            <h5 class="card-title">Clean the pond</h5>
+                            <p class="card-text">Some quick cleaning text to build on the card title and make up the bulk of the card’s
+                                content.</p>
+                                <br>
+                            <a href="contact_us.html" class="btn btn-primary">Questions on Cleaning</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="images/ducks-pond.webp" class="card-img-top" alt="duck pond">
+                        <div class="card-body">
+                            <h5 class="card-title">Watch the ducks swim</h5>
+                            <p class="card-text">Some quick watching text to build on the card title and make up the bulk of the card’s
+                                content.</p>
+                            <a href="contact_us.html" class="btn btn-primary">Questions on Duck Ponds</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
 
         <article>
             <h2>How you can help the ducks</h2>
             <p>Small actions make a big difference. Here are a few ways you can help keep our ducks healthy and safe:</p>
-            <ul>
-                <li>Feed duck-safe food (no bread): try cracked corn, oats, or duck pellets.</li>
-                <li>Keep a respectful distance and avoid chasing or startling them.</li>
-                <li>Dispose of litter properly to keep the pond clean.</li>
-                <li>Join a pond cleanup or volunteer — <a href="contact_us.html">contact us</a> to get involved.</li>
-            </ul>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Feed duck-safe food
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Feed duck-safe food (no bread): try cracked corn, oats, or duck pellets.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Kepp Your Distance
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Keep a respectful distance and avoid chasing or startling them. Ducks will byte you if they feel threartened.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Pick up Trash
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Dispose of litter properly to keep the pond clean.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Volunteer and join the Team
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Join a pond cleanup or volunteer — <a href="contact_us.html">contact us</a> to get involved.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
 
         <article>
@@ -70,6 +153,10 @@
             <a href=""https://www.theslf.xyz" target="_blank">Sherri Website</a>
      </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script> -->
+
+    <script src="scripts/jQuery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/site.js"></script>
 </body>
 </html>

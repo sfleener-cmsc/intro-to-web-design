@@ -1,85 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> MyPage </title>
+        <title>Ducks (and others)  </title>
+        <link rel="stylesheet" href="stylesheets/bootstrap.min.css" />
         <link rel="stylesheet" href="stylesheets/sites.css" />
     </head>
 
     <body>
         <header>
-            <div id="banner">
-                <p>Notification</p>
+            <div id="banner" class="bg-secondary text-white text-center" >
+                <p>A Notification For You</p>
             </div>
-            <div id="nav">
-                <!-- Anchor tags used for internal navigation -->
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
+            <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Duck Preservation</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="about_us.html">About Us</a>
+                            <a class="nav-link" href="contact_us.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </header>
-    <main>
+    <main class="container">
         <!-- Examples of heading tags -->
         <h1>Duck Preservation Center </h1>
         <hr/>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <h4>Heading 4</h4>
-        <h5>Heading 5</h5>
-        <h6>Heading 6</h6>        
-        
-        <article>
-            <!-- Sample iframe embedding YouTube remote video  -->
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="images/chicks.jpg" class="d-block w-100" alt="Chicks" width="400" height="700">
+                </div>
+                <div class="carousel-item">
+                <img src="images/dog.webp" class="d-block w-100" alt="Dog" width="150" height="700">
+                </div>
+                <div class="carousel-item">
+                <img src="images/highland-cow.jpg" class="d-block w-100" alt="Highland Cow" width="400" height="700">
+                </div>
+            </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+        </div>  
+        <br/>
+        <br/>
 
-            <h2>Enjoying their Day</h2>
-            <br/>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mQJ6q1ZCzsg?si=l-jhBxbIn__IBHe_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <br/>
+        <!-- Sample of 'Lorem ipsum' paragraphs being inserted -->
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos assumenda qui sapiente laudantium tenetur vel facere, ducimus corporis libero officia dolor a omnis temporibus praesentium dolores expedita dicta exercitationem eum? </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ut ratione sed vel consequuntur suscipit sunt iste accusamus! Perferendis tenetur dolores corporis maiores nemo itaque iure quasi quibusdam. Similique, magni.</p>
+        <br/>
+        <br />
 
-            <!-- Sample of 'Lorem ipsum' paragraphs being inserted -->
-
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa vitae maiores, explicabo molestias voluptatum excepturi iusto aut ratione aliquam maxime. Error iste nam suscipit qui itaque ducimus repellat provident? </p>
         </article>
+        <div class="row">
+            <div class="col">
+                <article>
+                    <!--Sample of local video being embedded.  -->
+                    <h2> Beautiful Multi-Colored Duck</h2>
+                    <video width="560" height="315" controls>
+                        <source src="video/Multicolor_tiny.mp4" type="video/mp4" />
+                        Your Browser doesn't support mp4
+                    </video>
+                        </article>
+            </div>
+            <br/>
 
-        <article>
-            <!--Sample of local video being embedded.  -->
-            <h2> Beautiful Multi-Colored Duck</h2>
-            <video width="560" height="315" controls>
-                <source src="video/Multicolor_tiny.mp4" type="video/mp4" />
-                Your Browser doesn't support mp4
-            </video> 
-        </article>
-  
+            <div class="col">
+                <article>
+                    <!-- Sample iframe embedding YouTube remote video  -->
+                
+                    <h2>Enjoying their Day</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mQJ6q1ZCzsg?si=l-jhBxbIn__IBHe_"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <br />
+                </article>
+            </div>
+        </div>
+       <br/>
+
         <article>
             <!--Sample of local audio and image being embedded.  -->
-            <br/>
             <h2>Watching for Ducks</h2>
             <audio controls>
-                <source src="audio/MeOnDucks.m4a" type="audio/mp4"/>
+                <source src="audio/MeOnDucks.m4a" type="audio/mp4" />
                 Your browser does not support the audio element.
             </audio>
-            <br/>
+            <br />
             <img src="images/duck_flight.jpg" alt="Duck Flight" width="600" height="400">
             <p>Looking at my Flying Ducks</p>
         </article>
 
        <br/>
-       <br/>
-       <br/>
-       <button id="jqueryBtn">Hide P Tags - jquery</button>
-       <button onclick="hidePTags()">Hide P Tags - JavaScript</button>
-       
-    </main>
+       <div class="text-center">
+            <button class="btn btn-danger" id="jqueryBtn">Hide P Tags - jquery</button>
+            <button class="btn btn-outline-danger btn-lg" onclick="hidePTags()">Hide P Tags - JavaScript</button>
+        </div>
 
-     <footer>
-    <!-- Sample of URLs being display for hyperlinks -->
-      <br/>
+        <footer class="py-3 mt-4 bg-secondary" data-bs-theme="dark">
+            <ul class="nav justify-content-center border-bottom pd-3 mb-3">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about_us.html" class="nav-link px-2 text-body-secondary">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact_us.html" class="nav-link px-2 text-body-secondary">Contact Us</a>
+                </li>
+            </ul>
+            <p class="text-center text-body-secondary">&copy;
+                <a href="https/theslf.xyz target="_blank" class="nav-link">Sherri Website</a>
+            </p>
+
+        </footer>
+    </main>
+<!-- Sample of URLs being display for hyperlinks -->
+     <!-- <footer>
+       <br/>
       <br/>
         <a href="https://www.amazon.com" target="_blank">Amazon</a>
         <a href="https://www.ebay.com" target="_blank">EBay</a>
-        <a href="https://treviorwilliams.com"  target="_blank">Trevior</a>
-     </footer>
+        <a href="https://theslf.xyz"  target="_blank">Sherri</a>
+     </footer> -->
 
      <script src="scripts/jQuery.min.js"></script>
+     <script src="scripts/bootstrap.min.js"></script>
      <script src="scripts/site.js"></script>
 
 

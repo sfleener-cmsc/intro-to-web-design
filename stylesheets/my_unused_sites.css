@@ -1,4 +1,4 @@
-h1{
+/* h1{
     color:blueviolet;
 }
 h2{
@@ -8,24 +8,19 @@ h2{
 h1, h2, h3, h4, h5, h6 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 
 #banner{
-    background-color: darkkhaki;
-    color:blue;
-    text-align: center;
     padding-top: 5px;
     padding-bottom: 5px;
 
 }
 
 #banner p{
-    margin: 0;
-}
+    margin: 0; */
+} 
 
-#nav, nav{
+/* #nav, nav{
     background-color: cadetblue;
     color: aliceblue;
     padding: 10px;
@@ -38,14 +33,14 @@ p{
     font-size: large;
     margin-right: 20px;
 
-}
+}  */
 
-#nav a:hover, nav a:hover{
+/* #nav a:hover, nav a:hover{
     background-color:rgb(49, 142, 72);
     color:rgb(242, 158, 125); 
-}
+} */
 
-#footer, footer, #footer2{
+/* #footer, footer, #footer2{
     background-color: #5eb89a;
     text-align: center;
     min-height: 150px;
@@ -56,18 +51,14 @@ p{
     margin-right: 10px;
     text-decoration: overline;
 
-}
+} */
 
-#main, main{
-    width: 80%;
-    margin: 0 auto;
-}
 
-article{
+/* article{
      margin-bottom: 50px;
 }
 
 .logo{
     height: 75px;
     width: 75px;
-}
+} */
